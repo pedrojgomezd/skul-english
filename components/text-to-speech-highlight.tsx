@@ -20,7 +20,7 @@ export default function TextToSpeechHighlight() {
       setIsPlaying(false)
       return
     }
-    let startIdx = currentWordIndex !== null ? currentWordIndex : findNextWordIndex(-1) ?? 0
+    const startIdx = currentWordIndex !== null ? currentWordIndex : findNextWordIndex(-1) ?? 0
     playFromIndex(startIdx)
   }
 
@@ -44,7 +44,7 @@ export default function TextToSpeechHighlight() {
       }
       utterance.onboundary = (event: any) => {
         if (event.name === "word") {
-          let charIndex = event.charIndex
+          const charIndex = event.charIndex
           let acc = 0
           for (let i = startIndex; i < wordsAndSpaces.length; i++) {
             acc += wordsAndSpaces[i].length
