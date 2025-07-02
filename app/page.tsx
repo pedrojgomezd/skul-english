@@ -6,6 +6,7 @@ import HeroSection from "@/components/hero-section"
 import ConversationFrame from "@/components/conversation-frame"
 import ClassCalendar from "@/components/class-calendar-google"
 import TextToSpeech from "@/components/text-to-speech-openia"
+import TextToSpeechHighlight from "@/components/text-to-speech-highlight"
 
 export default function HomePage() {
   return (
@@ -90,6 +91,9 @@ export default function HomePage() {
 
         {/* Text to Speech Practice */}
         <TextToSpeech />
+
+        {/* Text to Speech Highlight */}
+        <TextToSpeechHighlight />
 
         {/* CTA Section */}
         <section className="py-20 bg-blue-600">
