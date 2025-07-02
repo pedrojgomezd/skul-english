@@ -7,6 +7,7 @@ import ConversationFrame from "@/components/conversation-frame"
 import ClassCalendar from "@/components/class-calendar-google"
 import TextToSpeech from "@/components/text-to-speech-openia"
 import TextToSpeechHighlight from "@/components/text-to-speech-highlight"
+import ElevenLabsEmbed from "@/components/elevenlabs-embed"
 
 export default function HomePage() {
   return (
@@ -94,6 +95,9 @@ export default function HomePage() {
 
         {/* Text to Speech Highlight */}
         <TextToSpeechHighlight />
+
+        {/* ElevenLabs Embed */}
+        <ElevenLabsEmbed />
 
         {/* CTA Section */}
         <section className="py-20 bg-blue-600">
